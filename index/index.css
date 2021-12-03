@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  align-items: center;
+  /* border: 2px solid blue; */
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+  position: fixed;
+  width: 100%;
+}
+
+.star-wars-logo {
+  /* border: 1px solid white; */
+  height: 10vh;
+  width: 10%;
+}
+
+.star-wars:hover {
+  background-color: #383838;
+  cursor: pointer;
+}
+
+.fa-bars {
+  /* border: 1px solid orange; */
+  color: #f1bb06;
+}
+
+.fa-bars-hide {
+  position: absolute;
+  left: -999em;
+}
+
+.fa-bars:hover {
+  /* color: #a5a7a8; */
+  color: #383838;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.menu-show {
+  /* border: 1px solid blue; */
+  background-color: rgba(0, 0, 0, 0.9);
+  display: block;
+  right: 0;
+  height: 100vh;
+  position: fixed;
+  visibility: visible;
+  width: 25%;
+  z-index: 10;
+}
+
+#menu-option {
+  border-bottom: 1px solid rgba(241, 186, 6, 0.5);
+  color: #f1bb06;
+  font-size: x-large;
+  padding: 5%;
+}
+
+#menu-option:hover {
+  color: #383838;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url(/img/starry_sky.jpeg);
+  /* border: 4px solid green; */
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+.movie-container {
+  background-image: url(/img/starry_sky.jpeg);
+  /* border: 1px solid orangered; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 6%;
+  margin-top: 15vh;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+#poster {
+  border: 2px solid red;
+  height: auto;
+  margin: 1%;
+  width: 30%;
+}
+
+#poster:hover {
+  border: 5px solid #f1bb06;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  /* border: 3px solid yellow; */
+  align-items: center;
+  bottom: 0;
+  color: #74d8f1;
+  display: flex;
+  font-size: x-large;
+  height: 15%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
